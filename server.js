@@ -14,6 +14,7 @@ app.get('/',(req,res)=>{
 
 app.get('/next',(req,res)=>{
     res.send("Next route...");
+    res.send("No worries");
 });
 
 app.listen((PORT),()=>{
