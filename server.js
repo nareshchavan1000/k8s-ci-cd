@@ -12,6 +12,10 @@ app.get('/',(req,res)=>{
     res.send('Hello World...!!');
 });
 
+app.get('/next',(req,res)=>{
+    res.send("Next route...");
+});
+
 app.listen((PORT),()=>{
     console.log("Server Started at port "+PORT);
 });
