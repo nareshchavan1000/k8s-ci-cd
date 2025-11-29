@@ -18,6 +18,13 @@ app.get('/next',(req,res)=>{
     res.send("No worries");
 });
 
+const db = require('./config/db');
+db();
+
+const routes = require('./routes/user');
+
+app.use('/api/v1',routes);
+
 
 
 app.listen((PORT),()=>{
