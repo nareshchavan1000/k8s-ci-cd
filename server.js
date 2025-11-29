@@ -14,7 +14,7 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/next',(req,res)=>{
-    res.send("Next route...");
+    res.send("Next route... Hiii next");
 
 });
 
